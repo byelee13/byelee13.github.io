@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>K. - Work</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#848484",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#cfc4c5",
+                        "primary-fixed": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "outline": "#7e7576",
+                        "placeholder-fill": "#F0F0F0",
+                        "background": "#fbf9f8",
+                        "tertiary": "#000000",
+                        "surface-container-high": "#e9e8e7",
+                        "border-subtle": "#E5E5E5",
+                        "surface-dim": "#dbdad9",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-muted": "#FAFAFA",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-variant": "#e4e2e2",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface": "#fbf9f8",
+                        "secondary": "#5d5f5f",
+                        "on-background": "#1b1c1c",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#5f6161",
+                        "surface-tint": "#5e5e5e",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "secondary-container": "#dcdddd",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#efeded",
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-primary": "#c6c6c6",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-surface": "#1b1c1c",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary-fixed": "#1b1b1b",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-primary-container": "#848484",
+                        "surface-container-low": "#f5f3f3",
+                        "primary-container": "#1b1b1b",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#1b1b1b",
+                        "inverse-surface": "#303031",
+                        "secondary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "container-max": "1280px",
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "section-gap": "128px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "meta-sm": ["JetBrains Mono"],
+                        "label-caps": ["JetBrains Mono"],
+                        "display-lg-mobile": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "meta-sm": ["13px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-sm border-b border-border-subtle dark:border-outline-variant transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-margin-desktop py-unit max-w-container-max mx-auto">
+<a class="font-display-lg text-display-lg leading-none text-primary dark:text-on-primary scale-[0.4] origin-left uppercase tracking-widest" href="#">K</a>
+<nav class="flex gap-gutter font-label-caps text-label-caps uppercase tracking-widest">
+<a class="text-primary dark:text-on-primary border-b border-primary dark:border-on-primary pb-1 hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#">Work</a>
+<a class="text-secondary dark:text-on-secondary-container pb-1 hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#">About Me</a>
+</nav>
+</div>
+</header>
+<main class="flex-grow pt-24 fade-in">
+<!-- Hero Image Placeholder -->
+<section class="w-full h-[614px] bg-placeholder-fill flex items-center justify-center border-b border-border-subtle" data-alt="A stark, minimalist architectural photograph showing a concrete structure bathed in harsh sunlight against a pale, clear sky. The shadows are sharp and geometric. The aesthetic is low-fidelity, editorial, and highly structured, emphasizing form over texture. The color palette consists entirely of light grays, stark whites, and deep black shadows.">
+<span class="font-meta-sm text-meta-sm text-secondary uppercase">[Hero Image: Selected Works]</span>
+</section>
+<!-- Portfolio Grid -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter gap-y-section-gap">
+<!-- Project 1 (Full Width) -->
+<article class="col-span-1 md:col-span-12 group cursor-pointer">
+<div class="w-full aspect-[21/9] bg-placeholder-fill border border-border-subtle flex items-center justify-center mb-8 hover:bg-surface-variant transition-colors duration-300" data-alt="A wide, high-contrast screenshot of a complex SaaS dashboard focusing on data visualization. The interface is predominantly white and light gray with strict 1px borders and sharp geometric data points. The design is stark, lacking gradients or shadows, relying entirely on layout and monochromatic typography to guide the user.">
+<span class="font-meta-sm text-meta-sm text-secondary uppercase">[Project Image: Enterprise Dashboard]</span>
+</div>
+<div class="max-w-3xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">FinTech Analytics Platform</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8">A comprehensive redesign of a legacy financial tracking tool. The objective was to strip away superfluous UI elements, relying on a strict grid and monochromatic hierarchy to handle dense data sets without overwhelming the user.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-12 border-t border-border-subtle pt-12">
+<div class="aspect-square bg-placeholder-fill border border-border-subtle flex items-center justify-center" data-alt="A close-up view of a minimalist typography specification sheet showing precise font weights, tracking values, and baseline grid alignments for a web application. The sheet is stark white with black text, resembling a printed architectural blueprint for typography.">
+<span class="font-meta-sm text-meta-sm text-secondary uppercase">[Component: Typography Spec]</span>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-meta-sm text-meta-sm text-primary uppercase tracking-widest mb-4">Structural Logic</h3>
+<p class="font-body-md text-body-md text-secondary">The underlying system relies entirely on spacing and weight to delineate information architecture. By removing container borders and drop shadows, the raw data becomes the primary interface.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Project 2 (Half Width) -->
+<article class="col-span-1 md:col-span-6 group cursor-pointer border-t border-border-subtle pt-12 md:border-t-0 md:pt-0">
+<div class="w-full aspect-[4/3] bg-placeholder-fill border border-border-subtle flex items-center justify-center mb-6 hover:bg-surface-variant transition-colors duration-300" data-alt="A clean, structured wireframe layout for a mobile application. The screen shows lists and segmented controls designed with absolute minimalism, using only thin black lines and solid black functional buttons on a pale white background.">
+<span class="font-meta-sm text-meta-sm text-secondary uppercase">[Project Image: Mobile App Flow]</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 mt-8">Supply Chain Logistics</h2>
+<p class="font-body-md text-body-md text-secondary">Translating complex routing algorithms into an accessible mobile interface for field operatives. Emphasizing high-contrast states and large touch targets within a strict geometric framework.</p>
+</article>
+<!-- Project 3 (Half Width) -->
+<article class="col-span-1 md:col-span-6 group cursor-pointer border-t border-border-subtle pt-12 md:border-t-0 md:pt-0">
+<div class="w-full aspect-[4/3] bg-placeholder-fill border border-border-subtle flex items-center justify-center mb-6 hover:bg-surface-variant transition-colors duration-300" data-alt="A conceptual rendering of a design system component library. The layout features various form elements, buttons, and toggles laid out in a strict grid format. The styling is completely flat, devoid of shadows, utilizing only pure black and white with 1px structural outlines.">
+<span class="font-meta-sm text-meta-sm text-secondary uppercase">[Project Image: Design System]</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 mt-8">Healthcare Portal UI Kit</h2>
+<p class="font-body-md text-body-md text-secondary">A foundational design system built to ensure absolute consistency across a fragmented medical records ecosystem. Focused on semantic HTML patterns and low-fidelity aesthetic constraints.</p>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background dark:bg-surface w-full mt-section-gap border-t border-border-subtle dark:border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gutter max-w-container-max mx-auto gap-unit">
+<span class="font-label-caps text-label-caps text-primary dark:text-on-primary">K</span>
+<div class="font-meta-sm text-meta-sm text-primary dark:text-on-primary text-center">
+                © 2024 K. All rights reserved. Designed with architectural intent.
+            </div>
+<nav class="flex gap-gutter font-meta-sm text-meta-sm">
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-primary transition-colors cursor-pointer" href="#">LinkedIn</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-primary transition-colors cursor-pointer" href="#">Dribbble</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-primary transition-colors cursor-pointer" href="#">Resume</a>
+</nav>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,115 @@
+/* Newsprint Design System - Custom Utilities */
+
+/* Font Family Classes */
+.font-serif {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.font-body {
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Sharp Corners - Zero Radius Enforcement */
+.sharp-corners,
+.sharp-corners * {
+  border-radius: 0px !important;
+}
+
+/* Newsprint Texture - Dot Grid Pattern */
+body {
+  background-color: #F9F9F7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23111111' fill-opacity='0.04' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Section Texture - Fine Grid Lines */
+.newsprint-texture {
+  position: relative;
+}
+
+.newsprint-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(0deg, transparent 98%, rgba(0, 0, 0, 0.02) 100%),
+    linear-gradient(90deg, transparent 98%, rgba(0, 0, 0, 0.02) 100%);
+  background-size: 3px 3px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Hard Shadow Hover Effect */
+.hard-shadow-hover {
+  transition: all 200ms ease-out;
+}
+
+.hard-shadow-hover:hover {
+  box-shadow: 4px 4px 0px 0px #111111;
+  transform: translate(-2px, -2px);
+}
+
+/* Radial Dot Pattern for Placeholders */
+.halftone-pattern {
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 16px 16px;
+  opacity: 0.1;
+}
+
+/* Drop Cap Style */
+.drop-cap::first-letter {
+  font-size: 5rem;
+  line-height: 1;
+  float: left;
+  margin-right: 0.75rem;
+  margin-top: 0.1rem;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  color: #111111;
+}
+
+/* Ornamental Divider */
+.ornamental-divider {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #A3A3A3;
+  letter-spacing: 1em;
+}
+
+/* Justified Text for Editorial Feel */
+.text-editorial {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Focus States */
+*:focus-visible {
+  outline: none;
+  ring: 2px;
+  ring-color: #111111;
+  ring-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: #111111;
+  color: #F9F9F7;
+}
+
+/* Transitions */
+.transition-newsprint {
+  transition: all 200ms ease-out;
+}
+
+.transition-colors-newsprint {
+  transition: color 200ms ease-out, background-color 200ms ease-out, border-color 200ms ease-out;
+}
