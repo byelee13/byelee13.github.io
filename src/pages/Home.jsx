@@ -65,40 +65,24 @@ function Home() {
           </div>
         </div>
 
-        {/* Right Side - Visual Placeholder with Newsprint Texture */}
-        <div className="w-full md:w-1/2 relative bg-neutral-100 order-1 md:order-2 newsprint-texture overflow-hidden min-h-[400px] md:min-h-screen">
-          {/* Placeholder Box */}
-          <div className="absolute inset-0 flex items-center justify-center p-8">
-            <div className="relative">
-              {/* Halftone Pattern */}
-              <div className="w-64 h-64 md:w-96 md:h-96 halftone-pattern"></div>
-              
-              {/* Label */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center border-4 border-ink bg-newsprint p-6 md:p-8 sharp-corners">
-                  <p className="font-mono text-xs uppercase tracking-widest text-neutral-600 mb-2">
-                    Particle Effect
-                  </p>
-                  <p className="font-mono text-xs text-neutral-500">
-                    [Placeholder]
-                  </p>
-                </div>
-              </div>
-
-              {/* Corner Brackets */}
-              <div className="absolute top-0 left-0 w-8 h-8 md:w-12 md:h-12 border-t-2 border-l-2 border-ink/30"></div>
-              <div className="absolute bottom-0 right-0 w-8 h-8 md:w-12 md:h-12 border-b-2 border-r-2 border-ink/30"></div>
-            </div>
+        {/* Right Side - Designer Workspace Photo */}
+        <div className="w-full md:w-1/2 relative order-1 md:order-2 overflow-hidden min-h-[400px] md:min-h-screen group/hero">
+          <img
+            src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80"
+            alt="Designer's workspace with colorful pencils, wireframes and design tools"
+            className="absolute inset-0 w-full h-full object-cover grayscale group-hover/hero:grayscale-0 transition-all duration-700"
+          />
+          {/* Light overlay — fades out on hover to let color breathe */}
+          <div className="absolute inset-0 bg-newsprint/10 group-hover/hero:bg-transparent transition-all duration-700 pointer-events-none"></div>
+          {/* Corner brackets */}
+          <div className="absolute top-6 left-6 w-10 h-10 border-t-2 border-l-2 border-newsprint/60 pointer-events-none"></div>
+          <div className="absolute bottom-6 right-6 w-10 h-10 border-b-2 border-r-2 border-newsprint/60 pointer-events-none"></div>
+          {/* Fig caption */}
+          <div className="absolute bottom-6 left-6 pointer-events-none">
+            <p className="font-mono text-[10px] uppercase tracking-widest text-newsprint/70">
+              Fig. 1.2 — Design Studio
+            </p>
           </div>
-
-          {/* Grid Overlay */}
-          <div 
-            className="absolute inset-0 opacity-5 pointer-events-none"
-            style={{
-              backgroundImage: 'radial-gradient(#111111 1px, transparent 1px)',
-              backgroundSize: '24px 24px'
-            }}
-          ></div>
         </div>
       </main>
 

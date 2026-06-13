@@ -53,7 +53,7 @@ function Work() {
           <img
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1920&q=80"
             alt="Architectural building facade with geometric patterns representing structured design work"
-            className="absolute inset-0 w-full h-full object-cover grayscale group-hover:sepia-[50%] transition-all duration-500"
+            className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
           />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-ink/40 pointer-events-none"></div>
@@ -106,7 +106,7 @@ function Work() {
                   <img
                     src={project.image}
                     alt={project.imageAlt}
-                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover/img:sepia-[50%] transition-all duration-500 group-hover/img:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover/img:grayscale-0 transition-all duration-700 group-hover/img:scale-105"
                   />
                   {/* Subtle ink overlay */}
                   <div className="absolute inset-0 bg-ink/5 pointer-events-none"></div>
@@ -146,7 +146,7 @@ function Work() {
                           <img
                             src={project.detailImage}
                             alt={project.detailAlt}
-                            className="absolute inset-0 w-full h-full object-cover grayscale group-hover/detail:sepia-[50%] transition-all duration-500"
+                            className="absolute inset-0 w-full h-full object-cover grayscale group-hover/detail:grayscale-0 transition-all duration-700"
                           />
                           <div className="absolute inset-0 bg-ink/5 pointer-events-none"></div>
                         </div>

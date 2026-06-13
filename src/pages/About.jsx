@@ -73,7 +73,7 @@ function About() {
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
                   alt="Professional portrait of designer K"
-                  className="w-full h-full object-cover object-top grayscale group-hover/avatar:sepia-[50%] transition-all duration-500"
+                  className="w-full h-full object-cover object-top grayscale group-hover/avatar:grayscale-0 transition-all duration-700"
                 />
               </div>
             </div>
